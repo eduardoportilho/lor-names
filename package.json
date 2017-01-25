@@ -1,7 +1,7 @@
 {
   "name": "lor-names",
   "version": "0.0.0-semantically-released",
-  "description": "Get random Star Wars names",
+  "description": "Get random Lord of The Rings names",
   "main": "dist/index.js",
   "scripts": {
     "commit": "git-cz",
@@ -20,6 +20,7 @@
     "setup": "npm install && npm run validate",
     "setup:fem": "git checkout FEM/10.1-docs && npm install && npm run validate && rimraf .nyc_output coverage dist .git/hooks && git checkout FEM/00-scratch",
     "setup:egghead": "npm run setup && rimraf dist coverage && git checkout lesson/02-setting-up-github",
+    "release": "semantic-release pre && npm publish && semantic-release post",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
