@@ -1,10 +1,10 @@
 import uniqueRandomArray from 'unique-random-array';
-import starWarsNames from './starwars-names.json';
+import lorNames from './lor-names.json';
 
-const getRandomItem = uniqueRandomArray(starWarsNames);
+const getRandomItem = uniqueRandomArray(lorNames);
 
 module.exports = {
-  all: starWarsNames,
+  all: lorNames,
   random: random
 };
 
