@@ -1,6 +1,6 @@
 {
   "name": "lotr-names",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Get random Lord of the Rings names",
   "main": "dist/index.js",
   "scripts": {
@@ -13,11 +13,12 @@
     "watch:test": "mocha --watch",
     "lint": "eslint src",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "release": "semantic-release pre && npm publish && semantic-release post",
     "validate": "npm-run-all --parallel test lint build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eduardoportilho/lotr-names.git"
+    "url": "https://github.com/eduardoportilho/lor-names.git"
   },
   "keywords": [
     "random",
@@ -29,9 +30,9 @@
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://eduardoportilho.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/eduardoportilho/lotr-names/issues"
+    "url": "https://github.com/eduardoportilho/lor-names/issues"
   },
-  "homepage": "https://github.com/eduardoportilho/lotr-names#readme",
+  "homepage": "https://github.com/eduardoportilho/lor-names#readme",
   "dependencies": {
     "unique-random-array": "1.0.0"
   },
@@ -52,7 +53,8 @@
     "npm-run-all": "2.3.0",
     "nyc": "7.1.0",
     "rimraf": "2.5.4",
-    "webpack": "1.13.1"
+    "webpack": "1.13.1",
+    "semantic-release": "^6.3.2"
   },
   "nyc": {
     "all": true,
